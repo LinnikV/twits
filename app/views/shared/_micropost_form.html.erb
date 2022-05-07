@@ -1,0 +1,14 @@
+<%= form_with model: @micropost do |form| %>
+  
+    <div class="field">
+
+        <%= form.text_area :content, placeholder: "Compose new micropost..." %>
+        <%= form.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
+    </div>
+
+    <%= form.submit "Post", class: "button button-main" %>
+
+<% end %>
+
+
+

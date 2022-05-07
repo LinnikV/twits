@@ -1,0 +1,31 @@
+/*
+ *= require_tree .
+ *= require_self
+
+ 
+ */
+
+ .microposts {
+
+    display: inline-flexbox;
+    padding: 10px;
+    border: 1px solid #686666;
+
+}
+
+
+.user {
+    margin-top: 5em;
+    padding-top: 0;
+}
+
+.content {
+    display: block;
+    margin-left: 60px;
+}
+
+.timestamp {
+    color: rgb(43, 39, 39);
+    display: block;
+    margin-left: 60px;
+}

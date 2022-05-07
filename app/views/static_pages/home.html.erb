@@ -1,0 +1,11 @@
+  <div class = "container">
+  <% if logged_in? %>
+     <h2>Feeds</h2>
+      <%= render 'shared/feed' %>
+  <% else %>
+
+    <h1>Welcome to the TWITS!</h1>
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> or
+    <%= link_to "Log in", login_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
+  </div>

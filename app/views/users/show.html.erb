@@ -1,0 +1,28 @@
+<div class="container">
+
+
+    <%= gravatar_for @user %>
+    <h3>
+        <%= @user.name %><br>
+        <%= @user.email %>
+    </h3>
+
+    
+    <%= render 'shared/stats' %>
+    <%= render 'follow_form' if logged_in? %><br>
+
+    <%= render 'shared/micropost_form' %>
+    
+
+    <% if @user.microposts.any? %>
+        <h3>Microposts (<%= @user.microposts.count %>)</h3>
+        
+        <%= render @microposts %>
+        
+        <%= will_paginate @microposts %>
+    <% end %>
+
+
+</div>
+
+

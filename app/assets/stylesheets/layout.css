@@ -1,0 +1,20 @@
+body {
+
+    background: purple;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+
+
+}
+
+.container {
+    background: white;
+    padding: 20px;
+}

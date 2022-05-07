@@ -1,0 +1,34 @@
+<div class = "container">
+
+    <%= gravatar_for @user %>
+    <h1><%= @user.name %></h1>
+
+
+    <%= render 'shared/stats' %>
+    
+    <% if @users.any? %>
+
+        <div >
+            <% @users.each do |user| %>
+                <%= link_to gravatar_for(user, size: 30), user %>
+            <% end %>
+            <%= will_paginate %>
+        </div>
+
+    <% end %>
+
+    <div>
+        <h3><%= @title %></h3>
+        <% if @users.any? %>
+        
+            <% @users.each do |user| %>
+            <%= link_to gravatar_for(user, size: 30), user %>
+            <%= user.name %>
+            <hr>
+            <% end %>
+
+            <%= will_paginate %>
+        <% end %>
+    </div>
+
+</div>

@@ -1,0 +1,24 @@
+<div class = "container">
+<h3>Log in</h3>
+<%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+
+<div class = "field">
+    <%= f.label :email %><br>
+    <%= f.email_field :email %>
+</div>
+
+<div class = "field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+</div>
+
+<div class = "field">
+    <%= f.label :remember_me do %>
+        <%= f.check_box :remember_me %>
+        <span>Remember me on this computer</span>
+    <% end %>
+</div>
+
+    <%= f.submit "Log in", class: "button button-main" %>
+<% end %>
+</div>

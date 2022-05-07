@@ -1,0 +1,14 @@
+<div class = "container">
+
+    <h1>Edit your profile</h1> 
+
+
+    <div class="gravatar_edit">
+        <%= gravatar_for @user %><br>
+        <a href="https://gravatar.com/emails" target="_blank">change</a>
+    </div>
+    <br>
+   
+    <%= render 'form' %>
+    <%= button_to "Log out", logout_path, method: :delete, class: "button button-main" %>
+</div>

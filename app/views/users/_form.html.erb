@@ -1,0 +1,28 @@
+<%= form_with model: @user  do |form| %>
+
+<%= render 'shared/error_messages', object: form.object %>
+
+<div class = "field">
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+</div>
+
+<div class = "field">
+    <%= form.label :email %><br>
+    <%= form.email_field :email %>
+</div>
+
+<div class = "field">
+    <%= form.label :password %><br>
+    <%= form.password_field :password %>
+</div>
+
+<div class = "field">
+    <%= form.label :password_confirmation, "Confirmation" %><br>
+    <%= form.password_field :password_confirmation %>
+</div>
+
+ <div class = "field">
+    <%= form.submit "Save changes", class: "button button-main" %>
+<% end %>
+</div>

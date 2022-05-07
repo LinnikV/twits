@@ -1,0 +1,17 @@
+<div class = "header">
+
+    <div class = "logo">
+        <%= link_to_unless_current " TWITS", root_path %>
+    </div>
+
+    <div class = "nav">
+        <% if logged_in? %>
+            <%= link_to_unless_current "Users", users_path %>
+            <%= link_to_unless_current "Profile", current_user %>
+            <%= link_to_unless_current "Settings", edit_user_path(current_user) %>
+        <% else %>
+            <%= link_to_unless_current "Log in", login_path %>
+        <% end %>
+    </div>
+
+</div>

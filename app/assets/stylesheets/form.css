@@ -1,0 +1,23 @@
+.form-text-area,
+.form-text-field {
+
+    border: 1px solid rgb(82, 82, 82);
+    padding: 7px 10px;
+
+}
+
+.form-text-area:focus,
+.form-text-field:focus {
+
+    background-color: rgb(231, 196, 163);
+    outline-width: 0px;
+}
+
+.form-text-area {
+
+    box-sizing: border-box;
+    width: 50%;
+
+}
+
+

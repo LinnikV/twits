@@ -1,0 +1,25 @@
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 7%;
+   
+
+
+}
+
+.logo {
+font-size: 250%;
+color: white;
+
+}
+
+
+.nav {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    color: white;
+   
+    
+}
